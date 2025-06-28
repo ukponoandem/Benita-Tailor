@@ -1,0 +1,312 @@
+
+body {
+    margin: 0;
+    background-color: #f6f6f6; 
+}
+.Navbar {
+    padding: 0px 0;
+    text-align: center;
+    background-color:#706e6b ;
+}
+
+.lists {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+     justify-content: center;
+    align-items: center; 
+   display: flex;
+    gap: 50px;
+    
+}
+
+.lists li {
+    margin: 0 15px;
+}
+
+.list{
+    display: none;
+}
+
+.content {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+ 
+ .content:hover {
+   /* background-color: #706e6b; */
+     text-decoration: underline;
+}
+.sewing-maching{
+    width: 50px;
+    height: 50px;
+clip-path: circle(45% at 50% 55%);  
+}
+.header-title {
+    
+
+display: none;
+   
+}
+.header-titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     animation: machine 7s linear infinite alternate forwards;
+    }
+
+ .machine-text{
+    text-shadow: 1px 1px 1px darkblue;
+    font-size: 30px;
+    color: white;
+    margin-top: 5%;
+    
+}  
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+}
+
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+.form_container{
+    text-align: center;
+    
+    display: block;
+  
+}
+section h2{
+    text-align: center;
+}
+.input{
+    width: 45%;
+    padding: 20px;
+    margin: 2%;
+     border-radius: 15px;
+     justify-content: center;
+}
+.input:hover{
+  transition: all 3s ;
+  background-color: aqua;
+}
+.inputs{
+   height: 40%;
+   width: 40%;
+   padding: 20px;
+}
+
+.sender{
+    width: 20%;
+    padding: 15px;
+    margin: 1%;
+    background-color: grey;
+     border-radius: 15px;
+   
+}
+.social-icons {
+    color: #fff; /* White text for icons */
+    font-size: 15px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    background-color: black; /* Background color for icons */
+    padding: 15px; /* Space around the icons */
+    border-radius: 50%; /* Circular background */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.social-icon:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.social-icon{
+    color: #fff; /* White text for icons */
+    font-size: 15px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    background-color: green; /* Background color for icons */
+    padding: 15px; /* Space around the icons */
+    border-radius: 50%; /* Circular background */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.social-icon:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+textarea{
+    width: 35%;
+    padding: 40px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.last-footers{
+background-color:#757370 ;
+ 
+ color: white;
+ font-family:Verdana, Geneva, Tahoma, sans-serif; 
+font-style: oblique;
+font-size: 20px;
+text-align: center;
+width: 100vw;
+position: absolute;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        margin-left: 60%;
+    }
+
+    .list {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+        list-style: none;
+
+    }
+
+    .list.active {
+        display: flex;
+    }
+
+    .lists{
+        display: none;
+    }
+   .header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     animation: machine 7s linear infinite alternate forwards;
+   }
+
+   
+.last-footers{
+height: 20vh;
+margin-top: 40%;
+}
+  
+   
+} 
+
+
+@media screen and (max-width: 390px) {
+  .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    /* .sewing-maching{
+    width: 30px;
+    height: 23px;
+} */
+.machine-text{
+    font-size: 10px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(-0);
+    }
+    100%{
+        transform:rotate(1.0);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+    .sender{
+        max-width: 400px;
+    }
+     textarea{
+        margin-left: 0;
+    }
+   
+}
+
+
+@media screen and (max-width: 1200px) {
+  .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    /* .sewing-maching{
+    width: 30px;
+    height: 23px;
+} */
+.machine-text{
+    font-size: 10px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(-0);
+    }
+    100%{
+        transform:rotate(1.0);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+    .sender{
+        width: 20%;
+        
+    }
+}
+
+@media screen and (max-width: 790px) {
+  .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    /* .sewing-maching{
+    width: 30px;
+    height: 23px;
+} */
+.machine-text{
+    font-size: 10px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(-0);
+    }
+    100%{
+        transform:rotate(1.0);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+    .sender{
+        width: 20%;
+        
+    }
+}

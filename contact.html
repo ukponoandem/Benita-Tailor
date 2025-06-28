@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contat Benita-Tailor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+<section>
+    <nav class="Navbar"> 
+   
+        <!-- Menu Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Unicode hamburger icon -->
+        </div>
+   
+          <nav class="Navbar"> 
+ <ul class="lists">
+    
+     
+       <li> <a href="index.html"  class="content">Home</a></li>
+       <li><a href="About.html"  class="content">About Us</a></li> 
+        
+       <div class="header-titles">
+            <!-- <img src="index-images/machine.jpg" alt="sewing-maching" class="sewing-maching"> -->
+            <h1 class="machine-text">Benita Talior</h1>
+        </div>
+
+        <li><a href="service.html" class="content">Service</a> </li>
+        <li><a href="Contact.html"  class="content">Contact</a></li>
+    
+</ul>
+       </nav> 
+
+        <div class="header-title">
+            <!-- <img src="index-images/machine.jpg" alt="sewing-maching" class="sewing-maching"> -->
+            <h1 class="machine-text">Benita Talior</h1>
+        </div>
+    <ul class="list" id="nav-list">
+
+
+        <li><a href="index.html" class="content">Home</a></li>
+        <li><a href="About.html" class="content">About Us</a></li>
+
+    
+        <li><a href="service.html" class="content">Service</a></li>
+        <li><a href="Contact.html" class="content">Contact</a></li>
+    </ul>
+</nav>
+</section>
+
+
+<section>
+<h2>GET IN TOUCH</h2>
+  <div class="form_container">
+            <form>
+              
+              
+                <input type="text" name="First" placeholder="Your Name" class="input" /><br>
+              
+              
+                <input type="email" name="email" placeholder="Your Email" class="input" /><br>
+              
+              
+                <input type="number" name="number" placeholder="Your Phone" class="input" /><br>
+              
+              
+               <textarea name="Message" placeholder="Message" class="messages"></textarea><br>
+            
+               <input type="submit" value="Send" class="sender"/>
+             
+              
+            </form>
+          </div>
+</section>
+
+
+
+<section>
+    <footer class="last-footers">
+        <div class="last-footer2" >
+            <p>Copyright © 2025 – Benita-Tailor – All Rights Reserved</p>
+        </div>
+    </footer>
+</section>
+
+
+
+<script>
+function toggleMenu() {
+    const navList = document.getElementById('nav-list');
+    navList.classList.toggle('active');
+}
+</script>
+    </body>
+</html>

@@ -1,0 +1,345 @@
+body {
+    margin: 0; 
+}
+body {
+    margin: 0;
+    background-color: #f6f6f6; 
+}
+.Navbar {
+    padding: 0px 0;
+    text-align: center;
+    background-color:#706e6b ;
+}
+
+.lists {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+     justify-content: center;
+    align-items: center; 
+   display: flex;
+    gap: 50px;
+    
+}
+
+.lists li {
+    margin: 0 15px;
+}
+
+.list{
+    display: none;
+}
+
+.content {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+ 
+ .content:hover {
+   /* background-color: #706e6b; */
+     text-decoration: underline;
+}
+.sewing-maching{
+    width: 50px;
+    height: 50px;
+clip-path: circle(45% at 50% 55%);  
+}
+.header-title {
+    
+
+display: none;
+   
+}
+.header-titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     animation: machine 7s linear infinite alternate forwards;
+    }
+
+ .machine-text{
+    text-shadow: 1px 1px 1px darkblue;
+    font-size: 30px;
+    color: white;
+    margin-top: 5%;
+    
+}  
+
+.menu-icon {
+    font-size: 40px;
+    cursor: pointer;
+    display: none; 
+}
+
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+.ankara-style{
+    width: 25%;
+    height: 25%;
+    border-radius: 15%;
+}
+.ankara-sevices{
+    display: inline-flex;
+    
+}
+.services-text{
+    display: block;
+    
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+.services-text{
+
+}
+.ankara-style1{
+    width: 30%;
+    height: 30%;
+    border-radius: 15%;
+}
+
+.header-service{
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.header-servics2{
+  text-align: center;
+    font-size: 14px;
+    text-decoration: underline; 
+    color: darkblue; 
+}
+.header-service3{
+    font-size: 14px;
+}
+.header-service4{
+    font-size: 14px;
+}
+
+.last-footers{
+background-color:#757370 ;
+ 
+ color: white;
+ font-family:Verdana, Geneva, Tahoma, sans-serif; 
+font-style: oblique;
+font-size: 20px;
+text-align: center;
+width: 100vw;
+position: absolute;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        text-align: end;
+    }
+
+    .list {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+        list-style: none;
+
+    }
+
+    .list.active {
+        display: flex;
+    }
+
+    .lists{
+        display: none;
+    }
+   .header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     animation: machine 7s linear infinite alternate forwards;
+   }
+   .machine-text{
+    font-size: 35px;
+   }
+}
+
+@media screen and (max-width: 390px) {
+  .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 12px; 
+    }
+.machine-text{
+    font-size: 30px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+.ankara-style{
+    width: 15%;
+    height: 15%;
+    border-radius: 10%;
+}
+.header-service{
+        font-size: 15px;
+}
+.services-text{
+    font-size: 7px;
+}
+.ankara-style1{
+    width: 20%;
+    height: 20%;
+    border-radius: 10%;
+}
+.desingers{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.header-service{
+    text-align: center;
+    font-size: 10px;
+    
+}
+.header-servics2{
+  
+    font-size: 7px;
+    
+}
+.header-service3{
+    font-size: 7px;
+}
+.header-service4{
+    font-size: 7px;
+}
+}
+
+@media screen and (max-width: 490px) {
+  .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 12px; 
+    }
+
+
+    .list li {
+        margin: 10px 0;
+    }
+.ankara-style{
+    width: 15%;
+    height: 15%;
+    border-radius: 10%;
+}
+.header-service{
+        font-size: 15px;
+}
+.services-text{
+    font-size: 7px;
+}
+.ankara-style1{
+    width: 20%;
+    height: 20%;
+    border-radius: 10%;
+}
+.desingers{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.header-service{
+    text-align: center;
+    font-size: 10px;
+    
+}
+.header-servics2{
+  
+    font-size: 7px;
+    
+}
+.header-service3{
+    font-size: 7px;
+}
+.header-service4{
+    font-size: 7px;
+}
+
+
+}
+    
+
+@media screen and (max-width: 790px) {
+  .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 12px; 
+    }
+
+    .list li {
+        margin: 10px 0;
+    }
+.ankara-style{
+    width: 15%;
+    height: 15%;
+    border-radius: 10%;
+}
+.header-service{
+        font-size: 15px;
+}
+.services-text{
+    font-size: 7px;
+}
+.ankara-style1{
+    width: 20%;
+    height: 20%;
+    border-radius: 10%;
+}
+.desingers{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.header-service{
+    text-align: center;
+    font-size: 10px;
+    
+}
+.header-servics2{
+  
+    font-size: 7px;
+    
+}
+.header-service3{
+    font-size: 7px;
+}
+.header-service4{
+    font-size: 7px;
+}
+
+
+}
+ 
+

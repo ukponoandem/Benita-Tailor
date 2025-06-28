@@ -1,0 +1,1251 @@
+body {
+    margin: 0;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#fff;
+}
+
+.background-image{
+        height: 100vh;
+    width: 100vw;
+    background-image: url("index-images/ankara-design.jpg");
+      background-repeat: no-repeat;  
+     background-size: 100vw; 
+     background-position: top 0px;
+    background-color: #e9e6e1; 
+}
+
+.Navbar {
+    padding: 0px 0;
+    text-align: center;
+}
+.header-title {
+display: none;
+   
+}
+
+.lists {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* justify-content: center;
+    align-items: center; */
+  display: inline-flex;
+    gap: 30px;
+    
+}
+.list{
+    display: none;
+}
+
+.list li {
+    margin: 0 15px;
+}
+
+.content {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ .content:hover {
+   /* background-color: #706e6b; */
+    text-decoration: underline;
+}
+.sewing-maching{
+    width: 50px;
+    height: 50px;
+clip-path: circle(45% at 50% 55%);  
+}
+.header-titles{
+    display: inline-flex;
+    margin-top: 1%;
+    animation: machine 7s linear infinite alternate forwards;
+} 
+.machine-text{
+    text-shadow: 1px 1px 1px darkblue;
+    font-size: 22px;
+    color: white;
+    margin-top: 5%;
+    
+}
+
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+.background-text{
+    margin-top: 20%;
+    font-size: 40px;
+    font-style: oblique;
+}
+.background-text1{
+    color: chocolate;
+}
+.background-text{
+    color: #fff;
+}
+.header-text{
+    max-width: 600px;
+     /* font-family:'Times New Roman', Times, serif  */
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif 
+}
+.header-text1{
+    text-align: center;
+}
+.main-header{
+    display: flex;
+    gap: 5%;
+    background-color: white;
+}
+.images{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.measuring-section{
+    background-color: white;
+    display: flex;
+    
+}
+.tape{
+    width: 40%;
+    height: 40%;
+    filter: saturate(20%);
+    margin-top: 15%;
+    text-decoration: underline;
+}
+
+.tape2{
+    width: 50%;
+    height: 50%;
+       margin-top: 8%;
+       gap: 10px;
+}
+
+.main-section{
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-section-text{
+    max-width: 500px;
+    font-size: 14px;
+}
+.main-images{
+    width: 48%;
+    height: 75%;
+    border-radius: 20px;
+}
+.main-images1{
+    width: 48%;
+    height: 75%;
+    border-radius: 20px;
+}
+.text-header{
+    font-size: 40px;
+    max-width: 400px;
+    font-style: oblique;
+    text-align: center;
+}
+.style{
+    color: chocolate;
+}
+
+.Footer-background{
+     background-repeat: no-repeat;  
+        height: 120vh;
+    width: 100vw;
+    background-size: 50vw;
+    filter:saturate(18%);
+    background-image: url("index-images/footer1.jpg");
+    /* background-color: #706e6b; */
+background-color: #757370;
+
+}
+
+
+.footer-text1{
+    
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+ padding: 15%;
+}
+
+button{
+    font-size: 27px;
+     background-color:#757370 ;
+     color: white;
+}
+.last-footer{
+background-color:#757370 ;
+ display: inline-flex;
+ color: white;
+ font-family:Verdana, Geneva, Tahoma, sans-serif; 
+font-style: oblique;
+gap: 10px;
+font-size: 15px;
+width: 100vw;
+
+}
+.explore{
+    font-size: 15px;
+    color: #fff;
+    list-style-type: none;
+
+}
+
+.explore1{
+    font-size: 15px;
+
+}
+
+.icons{
+    
+    padding: 5%;
+}
+
+.social-icon{
+  border-radius: 50%;
+  background-color: black;
+  padding: 10px;
+  color: #fff;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+
+.social-icon:hover {
+    background-color: #0056b3; 
+    transform: scale(1.1); 
+}
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+}
+.fabrics-section{
+    display: flex;
+
+}
+ .fabrics-images{
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+ }
+ .fabrics-section h4{
+    font-style: oblique;
+    text-decoration: underline;
+ }
+ .fabrics-header{
+    text-align: center;
+}
+.text{
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        text-align: end;
+        transition: all 3s;
+    }
+
+    .list {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+        list-style: none;
+
+    }
+
+    .list.active {
+        display: flex;
+    }
+
+    .lists{
+        display: none;
+    }
+   .header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     animation: machine 7s linear infinite alternate forwards;
+
+
+   }
+
+   .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+   .measuring-section{
+    flex-direction: column;
+   margin-left: 20%;
+   
+   }
+   .last-footer{
+    height: 100vh;
+   }
+
+   .background-image{
+    background-size: 100vw;
+    height: 60vh;
+}
+.Footer-background{
+       height: 40vh;
+     background-size: 55vw;  
+}
+
+.main-section{
+    flex-direction: column;
+text-align: center;
+}
+.main-section-text{
+    max-width: 1000px;
+}
+.text-header{
+max-width: 1000px;
+text-align: center;
+}
+.main-images1{
+    width: 43%;
+    height: 70%;
+    border-radius: 20px;
+}
+.fabrics-section{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+} 
+@media screen and (max-width:590px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 23px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+/* .background-image{
+    height: 80vh;
+    width: 100vw;
+    background-size: 85vmax;
+}
+.Footer-background{
+       height: 55vh;
+    width: 100vw;
+     background-size: 55vw;
+     
+} */
+
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+.last-footer{
+position: absolute;
+gap: 5px;
+font-size: 10px;
+
+}
+.explore{
+    display: none;
+    
+}
+
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+  }
+   .measuring-section{
+    flex-direction: column;
+   margin-left: 20%;
+   
+   }
+ 
+}
+
+@media screen and (max-width: 1280px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 23px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+ .background-image{
+    height: 90vh;
+    
+}
+    
+.Footer-background{
+    height: 90vh; 
+    width: 100vw;
+} 
+
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+.last-footer{
+font-size: 10px;
+height: 20vh;
+
+
+
+}
+.explore{
+    display: none;
+    
+}
+
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .header-text{
+    text-align: center;
+    max-width: 1200px;
+  }
+   .measuring-section{
+    flex-direction: column;
+   
+   text-align: center;
+   
+   }
+ 
+}
+
+@media screen and (max-width: 1200px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 23px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+ .background-image{
+    height: 45vh;
+    
+}
+    
+.Footer-background{
+    height: 90vh; 
+    
+} 
+
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+.last-footer{
+font-size: 10px;
+height: 20vh;
+
+
+}
+.explore{
+    display: none;
+    
+}
+
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .header-text{
+    text-align: center;
+    max-width: 1000px;
+  }
+   .measuring-section{
+    flex-direction: column;
+   
+   text-align: center;
+   
+   }
+ 
+}
+
+
+
+@media screen and (max-width: 853px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 30px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+.background-image{
+    height: 60vh;
+}
+/* 
+.Footer-background{
+       height: 40vh;
+    width: 100vw;
+     background-size: 50vw;
+     
+} */
+
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+.last-footer{
+height: 20vh;
+}
+
+
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+  }
+   .measuring-section{
+    flex-direction: column;
+   margin-left: 20%;
+   
+   }
+ 
+.explore{
+    display: none;
+    
+}
+}
+
+
+
+
+@media screen and (max-width: 912px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 30px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+.background-image{
+    height: 40vh;
+    
+    background-size: 100vw;
+}
+.Footer-background{
+       height:35vh;
+
+     background-size: 45vw;
+     
+}
+
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+.last-footer{
+font-size: 12px;
+height: 30vh;
+
+}
+.explore{
+    display: none;
+    
+}
+
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+  }
+   .measuring-section{
+    flex-direction: column;
+   margin-left: 20%;
+   
+   }
+ 
+}
+
+
+
+@media screen and (max-width: 520px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 30px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+.last-footer{
+position: absolute;
+gap: 5px;
+font-size: 10px;
+text-align: center;
+
+}
+.explore{
+    display: none;
+    
+}
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+  }
+   .measuring-section{
+    flex-direction: column;
+   margin-left: 20%;
+   
+   }
+ 
+
+
+}
+
+@media screen and (max-width: 540px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 30px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+.background-image{
+    height:50vh;
+    width: 100vw;
+    background-size: 85vmax;
+}
+.Footer-background{
+       height: 50vh;
+     background-size: 65vw;
+     
+} 
+.last-footer{
+    height: 65vh;
+}
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+
+.explore{
+    display: none;
+    
+}
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+  }
+   .measuring-section{
+    flex-direction: column;
+   margin-left: 20%;
+   
+   }
+ 
+
+}
+
+
+
+@media screen and (max-width: 653px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 30px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+
+
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+.last-footer{
+position: absolute;
+gap: 5px;
+font-size: 10px;
+flex-direction: column;
+text-align: center;
+
+}
+.explore{
+    display: none;
+    
+}
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+  }
+   .measuring-section{
+    flex-direction: column;
+   margin-left: 20%;
+   
+   }
+ 
+
+}
+
+@media screen and (max-width: 453px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 30px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+ 
+.background-image{
+   background-image: url("index-images/ankara1.jpg");
+    background-size: 100vw;
+    height: 58vh;
+} 
+ 
+.Footer-background{
+       height: 30vh;
+    
+     background-size: 60vw;
+     
+} 
+ .last-footer{
+    height: 55vh;
+ }
+
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+.last-footer{
+position: absolute;
+gap: 5px;
+font-size: 10px;
+flex-direction: column;
+text-align: center;
+
+}
+.explore{
+    display: none;
+    
+}
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+  }
+   .measuring-section{
+    flex-direction: column;
+   margin-left: 20%;
+   
+   }
+ 
+}
+
+
+@media screen and (max-width: 360px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 30px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform:rotate(1.5);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+.background-image{
+    background-image: url("index-images/ankara1.jpg");
+    background-size: 100vw;
+    height: 60vh;
+}
+
+ .last-footer{
+    height: 50vh;
+ }
+
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+
+.explore{
+    display: none;
+    
+}
+ 
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+    
+        
+    }
+    .content{
+        font-size: 7px; 
+    }
+    .sewing-maching{
+    width: 30px;
+    height: 30px;
+}
+.machine-text{
+    font-size: 15px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(-0);
+    }
+    100%{
+        transform:rotate(1.0);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+.background-image{
+    background-image: url("index-images/ankara1.jpg");
+    background-size: 100vw;
+    height: 70vh;
+}
+/* 
+.Footer-background{
+       height: 30vh;
+    width: 100vw;
+     background-size: 55vw;
+     
+} */
+ .last-footer{
+    height: 65vh;
+ }
+
+.footer-text1{
+    font-size: 10px;
+    padding: 14%;
+ 
+}
+button{
+    font-size: 14px;
+}
+.last-footer{
+position: absolute;
+gap: 5px;
+font-size: 10px;
+flex-direction: column;
+text-align: center;
+
+}
+.explore{
+    display: none;
+    
+}
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+  }
+   .measuring-section{
+    flex-direction: column;
+   margin-left: 20%;
+   
+   }
+ 
+}
+
+@media screen and (max-width: 344px) {
+    .list {
+        flex-direction: column;
+        gap: 0px;
+        font-size: 4px;
+        
+    }
+    .content{
+        font-size: 4px; 
+    }
+    .sewing-maching{
+    width: 20px;
+    height: 20px;
+}
+.machine-text{
+    font-size: 10px;
+}
+@keyframes machine{
+    0%{
+        transform: scale(-0);
+    }
+    100%{
+        transform:rotate(1.0);  
+    }
+}
+
+    .list li {
+        margin: 10px 0;
+    }
+
+.background-image{
+ background-image: url("index-images/ankara1.jpg");  
+ background-size: 45vmax;
+ height: 50vh;
+ width:100vw ;
+}
+
+.Footer-background{
+    background-size: 25vmax;
+     height: 30vh;
+     width: 100vw;
+} 
+
+
+.footer-text1{
+    font-size: 4px;
+    padding: 15%;
+ 
+}
+button{
+    font-size: 14px;
+}
+.last-footer{
+font-size: 12px;
+height: 55vh;
+ width: 100vw;
+ 
+
+}
+.explore{
+display: none;
+    
+}
+ .background-text{
+    font-size: 15px;
+   }
+   
+  .main-header{
+    flex-direction: column;
+    text-align: center;
+  }
+   .measuring-section{
+    flex-direction: column;
+   margin-left: 20%;
+   
+   }
+ 
+
+}
+
+
+
