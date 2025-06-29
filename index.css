@@ -1,22 +1,21 @@
 body {
     margin: 0;
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     background-color:#fff;
 }
-
 .background-image{
         height: 100vh;
     width: 100vw;
     background-image: url("index-images/ankara-design.jpg");
       background-repeat: no-repeat;  
      background-size: 100vw; 
-     background-position: top 0px;
-    background-color: #e9e6e1; 
+      min-height: 100vh;
+    
 }
-
 .Navbar {
     padding: 0px 0;
     text-align: center;
+    
 }
 .header-title {
 display: none;
@@ -27,10 +26,10 @@ display: none;
     list-style: none;
     margin: 0;
     padding: 0;
-    /* justify-content: center;
-    align-items: center; */
-  display: inline-flex;
-    gap: 30px;
+  display:inline-flex;
+  text-align: center;
+     gap: 50px;
+    
     
 }
 .list{
@@ -39,6 +38,7 @@ display: none;
 
 .list li {
     margin: 0 15px;
+ 
 }
 
 .content {
@@ -50,24 +50,20 @@ display: none;
 }
 
  .content:hover {
-   /* background-color: #706e6b; */
+   
     text-decoration: underline;
 }
-.sewing-maching{
-    width: 50px;
-    height: 50px;
-clip-path: circle(45% at 50% 55%);  
-}
+
 .header-titles{
     display: inline-flex;
     margin-top: 1%;
     animation: machine 7s linear infinite alternate forwards;
 } 
 .machine-text{
-    text-shadow: 1px 1px 1px darkblue;
-    font-size: 22px;
+    text-shadow: 1px 3px 1px darkblue;
+    font-size: 25px;
     color: white;
-    margin-top: 5%;
+    margin: auto;
     
 }
 
@@ -79,20 +75,25 @@ clip-path: circle(45% at 50% 55%);
         transform:rotate(1.5);  
     }
 }
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+    color: #fff;
+}
 .background-text{
-    margin-top: 20%;
-    font-size: 40px;
+    margin-top: 15%;
+    font-size: 30px;
     font-style: oblique;
 }
 .background-text1{
-    color: chocolate;
+    color:black;
 }
 .background-text{
     color: #fff;
 }
 .header-text{
     max-width: 600px;
-     /* font-family:'Times New Roman', Times, serif  */
      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif 
 }
 .header-text1{
@@ -155,17 +156,35 @@ clip-path: circle(45% at 50% 55%);
 .style{
     color: chocolate;
 }
+.fabrics-header{
+    text-align: center;
+}
+.fabrics-section{
+    display: flex;
 
+}
+ .fabrics-images{
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+ }
+ .fabrics-section h4{
+    font-style: oblique;
+    text-decoration: underline;
+ }
+ .text{
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+}
 .Footer-background{
      background-repeat: no-repeat;  
-        height: 120vh;
-    width: 100vw;
-    background-size: 50vw;
-    filter:saturate(18%);
-    background-image: url("index-images/footer1.jpg");
-    /* background-color: #706e6b; */
-background-color: #757370;
-
+     height: 100vh;
+     width: 100vw;
+     background-size: 50vw;
+     filter:saturate(18%);
+     background-image: url("index-images/footer1.jpg");
+     background-color: #757370;
 }
 
 
@@ -176,7 +195,7 @@ background-color: #757370;
     text-align: center;
     font-size: 20px;
     font-style: italic;
- padding: 15%;
+     padding: 15%;
 }
 
 button{
@@ -201,14 +220,11 @@ width: 100vw;
     list-style-type: none;
 
 }
-
 .explore1{
     font-size: 15px;
-
 }
 
-.icons{
-    
+.icons{ 
     padding: 5%;
 }
 
@@ -219,43 +235,14 @@ width: 100vw;
   color: #fff;
     transition: background-color 0.3s, transform 0.3s; 
 }
-
-
 .social-icon:hover {
     background-color: #0056b3; 
     transform: scale(1.1); 
 }
-.menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-    display: none; 
-}
-.fabrics-section{
-    display: flex;
-
-}
- .fabrics-images{
-    width: 70%;
-    height: 70%;
-    border-radius: 10px;
- }
- .fabrics-section h4{
-    font-style: oblique;
-    text-decoration: underline;
- }
- .fabrics-header{
-    text-align: center;
-}
-.text{
-    text-align: center;
-    font-size: 20px;
-    font-style: oblique;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 790px) {
     .menu-icon {
         display: block;
-        text-align: end;
+        text-align:initial;
         transition: all 3s;
     }
 
@@ -264,12 +251,11 @@ width: 100vw;
         flex-direction: column;
         margin-top: 10px;
         list-style: none;
-
     }
 
-    .list.active {
+     .list.active {
         display: flex;
-    }
+    } 
 
     .lists{
         display: none;
@@ -278,15 +264,12 @@ width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-     animation: machine 7s linear infinite alternate forwards;
-
-
+     animation: machine 7s linear infinite alternate forwards; 
    }
-
    .background-text{
-    font-size: 15px;
+    font-size: 10px;
    }
-   
+  
   .main-header{
     flex-direction: column;
     text-align: center;
@@ -294,22 +277,9 @@ width: 100vw;
  
    .measuring-section{
     flex-direction: column;
-   margin-left: 20%;
+   text-align: center;
    
    }
-   .last-footer{
-    height: 100vh;
-   }
-
-   .background-image{
-    background-size: 100vw;
-    height: 60vh;
-}
-.Footer-background{
-       height: 40vh;
-     background-size: 55vw;  
-}
-
 .main-section{
     flex-direction: column;
 text-align: center;
@@ -322,930 +292,302 @@ max-width: 1000px;
 text-align: center;
 }
 .main-images1{
-    width: 43%;
-    height: 70%;
+    width: 45%;
+    height: 75%;
     border-radius: 20px;
 }
 .fabrics-section{
     flex-direction: column;
     text-align: center;
 }
-
-
-} 
-@media screen and (max-width:590px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 23px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform:rotate(1.5);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
-
-/* .background-image{
-    height: 80vh;
-    width: 100vw;
-    background-size: 85vmax;
-}
-.Footer-background{
-       height: 55vh;
-    width: 100vw;
-     background-size: 55vw;
-     
-} */
-
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-.last-footer{
-position: absolute;
-gap: 5px;
-font-size: 10px;
-
-}
-.explore{
-    display: none;
-    
-}
-
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-  }
-   .measuring-section{
-    flex-direction: column;
-   margin-left: 20%;
-   
-   }
- 
-}
-
-@media screen and (max-width: 1280px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 23px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform:rotate(1.5);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
-
- .background-image{
-    height: 90vh;
-    
-}
-    
-.Footer-background{
-    height: 90vh; 
-    width: 100vw;
-} 
-
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-.last-footer{
-font-size: 10px;
-height: 20vh;
-
-
-
-}
-.explore{
-    display: none;
-    
-}
-
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-
-  }
-  .header-text{
-    text-align: center;
-    max-width: 1200px;
-  }
-   .measuring-section{
-    flex-direction: column;
-   
-   text-align: center;
-   
-   }
- 
-}
-
-@media screen and (max-width: 1200px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 23px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform:rotate(1.5);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
-
- .background-image{
-    height: 45vh;
-    
-}
-    
-.Footer-background{
-    height: 90vh; 
-    
-} 
-
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-.last-footer{
-font-size: 10px;
-height: 20vh;
-
-
-}
-.explore{
-    display: none;
-    
-}
-
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-
-  }
-  .header-text{
-    text-align: center;
-    max-width: 1000px;
-  }
-   .measuring-section{
-    flex-direction: column;
-   
-   text-align: center;
-   
-   }
- 
-}
-
-
-
-@media screen and (max-width: 853px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 30px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform:rotate(1.5);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
+  
 
 .background-image{
-    height: 60vh;
-}
-/* 
-.Footer-background{
-       height: 40vh;
     width: 100vw;
-     background-size: 50vw;
-     
-} */
-
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-.last-footer{
-height: 20vh;
-}
-
-
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-  }
-   .measuring-section{
-    flex-direction: column;
-   margin-left: 20%;
-   
-   }
- 
-.explore{
-    display: none;
-    
-}
-}
-
-
-
-
-@media screen and (max-width: 912px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 30px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform:rotate(1.5);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
-
-.background-image{
-    height: 40vh;
-    
-    background-size: 100vw;
-}
-.Footer-background{
-       height:35vh;
-
-     background-size: 45vw;
-     
-}
-
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-.last-footer{
-font-size: 12px;
-height: 30vh;
-
-}
-.explore{
-    display: none;
-    
-}
-
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-  }
-   .measuring-section{
-    flex-direction: column;
-   margin-left: 20%;
-   
-   }
- 
-}
-
-
-
-@media screen and (max-width: 520px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 30px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform:rotate(1.5);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
-
-
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-.last-footer{
-position: absolute;
-gap: 5px;
-font-size: 10px;
-text-align: center;
-
-}
-.explore{
-    display: none;
-    
-}
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-  }
-   .measuring-section{
-    flex-direction: column;
-   margin-left: 20%;
-   
-   }
- 
-
-
-}
-
-@media screen and (max-width: 540px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 30px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform:rotate(1.5);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
-
-.background-image{
-    height:50vh;
-    width: 100vw;
-    background-size: 85vmax;
-}
-.Footer-background{
-       height: 50vh;
-     background-size: 65vw;
-     
-} 
-.last-footer{
-    height: 65vh;
-}
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-
-.explore{
-    display: none;
-    
-}
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-  }
-   .measuring-section{
-    flex-direction: column;
-   margin-left: 20%;
-   
-   }
- 
-
-}
-
-
-
-@media screen and (max-width: 653px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 30px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform:rotate(1.5);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
-
-
-
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-.last-footer{
-position: absolute;
-gap: 5px;
-font-size: 10px;
-flex-direction: column;
-text-align: center;
-
-}
-.explore{
-    display: none;
-    
-}
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-  }
-   .measuring-section{
-    flex-direction: column;
-   margin-left: 20%;
-   
-   }
- 
-
-}
-
-@media screen and (max-width: 453px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 30px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform:rotate(1.5);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
- 
-.background-image{
-   background-image: url("index-images/ankara1.jpg");
-    background-size: 100vw;
-    height: 58vh;
-} 
- 
-.Footer-background{
-       height: 30vh;
-    
-     background-size: 60vw;
-     
-} 
- .last-footer{
-    height: 55vh;
- }
-
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-.last-footer{
-position: absolute;
-gap: 5px;
-font-size: 10px;
-flex-direction: column;
-text-align: center;
-
-}
-.explore{
-    display: none;
-    
-}
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-  }
-   .measuring-section{
-    flex-direction: column;
-   margin-left: 20%;
-   
-   }
- 
-}
-
-
-@media screen and (max-width: 360px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 30px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(1.5);
-    }
-    100%{
-        transform:rotate(1.5);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
-
-.background-image{
-    background-image: url("index-images/ankara1.jpg");
     background-size: 100vw;
     height: 60vh;
+    min-height: 100vh;
 }
-
- .last-footer{
-    height: 50vh;
- }
-
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-
-.explore{
-    display: none;
-    
-}
- 
-}
-
-
-
-
-@media screen and (max-width: 375px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
-    .sewing-maching{
-    width: 30px;
-    height: 30px;
-}
-.machine-text{
-    font-size: 15px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(-0);
-    }
-    100%{
-        transform:rotate(1.0);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
-
-.background-image{
-    background-image: url("index-images/ankara1.jpg");
-    background-size: 100vw;
-    height: 70vh;
-}
-/* 
 .Footer-background{
-       height: 30vh;
-    width: 100vw;
-     background-size: 55vw;
-     
-} */
- .last-footer{
-    height: 65vh;
- }
-
-.footer-text1{
-    font-size: 10px;
-    padding: 14%;
- 
-}
-button{
-    font-size: 14px;
-}
-.last-footer{
-position: absolute;
-gap: 5px;
-font-size: 10px;
-flex-direction: column;
-text-align: center;
-
-}
-.explore{
-    display: none;
-    
-}
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-  }
-   .measuring-section{
-    flex-direction: column;
-   margin-left: 20%;
-   
-   }
- 
-}
-
-@media screen and (max-width: 344px) {
-    .list {
-        flex-direction: column;
-        gap: 0px;
-        font-size: 4px;
-        
-    }
-    .content{
-        font-size: 4px; 
-    }
-    .sewing-maching{
-    width: 20px;
-    height: 20px;
-}
-.machine-text{
-    font-size: 10px;
-}
-@keyframes machine{
-    0%{
-        transform: scale(-0);
-    }
-    100%{
-        transform:rotate(1.0);  
-    }
-}
-
-    .list li {
-        margin: 10px 0;
-    }
-
-.background-image{
- background-image: url("index-images/ankara1.jpg");  
- background-size: 45vmax;
- height: 50vh;
- width:100vw ;
-}
-
-.Footer-background{
-    background-size: 25vmax;
-     height: 30vh;
+       height: 35vh;
+     background-size: 60vw; 
      width: 100vw;
+}
+ .last-footer{
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+    text-align: center;
+   }
+   .explore{
+    display: none;
+   }
+
+.icons{
+    padding: 10px;
+}
 } 
-
-
+@media (max-width:430px){
+.background-image{
+    height: 60vh;
+    background-size: 100vw;
+     min-height: 100vh;
+}
+.Footer-background{
+  height: 35vh;
+     background-size: 60vw; 
+}
 .footer-text1{
-    font-size: 4px;
-    padding: 15%;
- 
+    font-size: 10px;
 }
 button{
-    font-size: 14px;
+    font-size: 15px;
 }
 .last-footer{
-font-size: 12px;
-height: 55vh;
- width: 100vw;
- 
+    height: 80vh;
+}
+}
+@media (max-width:375px) {
+ .background-image{
+        height: 60vh;
+    width: 100vw;
+    background-image: url("index-images/ankara1.jpg");
+      background-repeat: no-repeat;  
+    background-size:100vw;  
+     min-height: 100vh;
+}
+    .Footer-background{
+      height: 40vh;
+     background-size: 60vw; 
+    }
+    .last-footer{
+        height: 80vh;
+    }
+}
+@media (max-width:390px) {
+    .background-image{
+        background-size: 100vw;
+        height: 60vh;
+        min-height: 100vh;
+    }
+    .Footer-background{
+      height: 35vh;
+     background-size: 60vw; 
+    }
+    .last-footer{
+        height: 80vh;
+    }
+}
+ @media (max-width:360px) {
+.Footer-background{
+     height: 35vh;
+     background-size: 60vw; 
+    width: 100vw;
+}
+.last-footer1{
+    flex-wrap: wrap;
+}
+
+ }   
+@media (max-width:768px) {
+   .background-image{
+        height: 60vh;
+    width: 100vw;
+    background-image: url("index-images/ankara1.jpg");
+      background-repeat: no-repeat;  
+    background-size:100vw;  
+     min-height: 100vh;
+}
+   .header-text{
+    max-width: 1000px;
+   }
+   .Footer-background{
+      height: 35vh;
+     background-size: 60vw; 
+   }
+   .main-images{
+    width: 50%;
+    height: 85%;
+    border-radius: 20px;
+}
 
 }
-.explore{
-display: none;
+
+@media (max-width:820px) {
+
+   .background-image{
+    height: 60vh;
+    background-size: 100vw;
+     min-height: 100vh;
+   } 
+   .main-header{
+    flex-direction: column;
+   }
+   .header-text{
+    max-width: 1000px;
+   }
+   .background-text{
+    font-size: 13px;
+   }
+   .main-section{
+    flex-direction: column;
+   }
+   .main-section-text{
+    max-width: 1000px;
+   }
+   .text-header{
+    max-width: 1000px;
+   }
+   .Footer-background{
+     height: 35vh;
+     background-size: 60vw; 
+   }
+   .explore{
+    display: none;
+   }
+   .main-images{
+    width: 50%;
+    height: 89%;
+    border-radius: 20px;
+}
+.main-images1{
+    width: 45%;
+    height: 85%;
+    border-radius: 20px;
+}
+}
+
+
+@media (max-width:1024px) {
+    .background-image{
+    height: 60vh;
+    background-size: 100vw;
+     min-height: 100vh;
+   } 
+   .main-header{
+    flex-direction: column;
+   }
+   .header-text{
+    max-width: 1000px;
+   }
+   .background-text{
+    font-size: 13px;
+   }
+   .main-section{
+    flex-direction: column;
+   }
+   .main-section-text{
+    max-width: 1000px;
+   }
+   .text-header{
+    max-width: 1000px;
+   }
+   .Footer-background{
+   height: 35vh;
+     background-size: 60vw; 
+   }
+   .explore{
+    display: none;
+   }
+   .main-images{
+    width: 50%;
+    height: 89%;
+    border-radius: 20px;
+}
+.main-images1{
+    width: 45%;
+    height: 85%;
+    border-radius: 20px;
+}
+}
+@media (max-width:540px) {
+
+.background-image{
+        height: 60vh;
+    width: 100vw;
+    background-image: url("index-images/ankara1.jpg");
+      background-repeat: no-repeat;  
+    background-size: 100vw;
+     min-height: 100vh;
     
 }
- .background-text{
-    font-size: 15px;
-   }
-   
-  .main-header{
-    flex-direction: column;
-    text-align: center;
-  }
-   .measuring-section{
-    flex-direction: column;
-   margin-left: 20%;
-   
-   }
- 
-
+.Footer-background{
+  height: 35vh;
+     background-size: 60vw;  
 }
 
+}
+@media (max-width:344px) {
 
+    .background-image{
+        height: 60vh;
+         background-size: 100vmax;
+    }
+    .Footer-background{
+        height: 35vh;
+     background-size: 60vw; 
+    }
+}
+@media (max-width:412px) {
+.background-image{
+        height: 60vh;
+    width: 100vw;
+    background-image: url("index-images/ankara1.jpg");
+      background-repeat: no-repeat;  
+    background-size: 100vw;
+     min-height: 100vh;
+}
+    .Footer-background{
+         height: 35vh;
+     background-size: 60vw; 
+    }
+    .last-footer{
+       width: 100vw;  
+       height: 80vh;
+    }
+}
 
+@media (max-width:1280px) {
+    .background-image{
+    height: 60vh;
+     min-height: 100vh;
+   } 
+   .main-header{
+    flex-direction: column;
+   }
+   .header-text{
+    max-width: 1200px;
+   }
+   .background-text{
+    font-size: 13px;
+   }
+   .main-section{
+    flex-direction: column;
+   }
+   .main-section-text{
+    max-width: 1500px;
+   }
+   .text-header{
+    max-width: 1500px;
+   }
+   .Footer-background{
+      height: 35vh;
+     background-size: 60vw; 
+   }
+   .explore{
+    display: none;
+   }
+   .main-images{
+    width: 50%;
+    height: 89%;
+    border-radius: 20px;
+}
+.main-images1{
+    width: 45%;
+    height: 85%;
+    border-radius: 20px;
+}
+.last-footer{
+    height: 80vh;
+}
+}
