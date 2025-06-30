@@ -58,14 +58,13 @@ display: none;
      animation: machine 7s linear infinite alternate forwards;
     }
 
- .machine-text{
-    text-shadow: 1px 1px 1px darkblue;
-    font-size: 30px;
+.machine-text{
+    text-shadow: 1px 3px 1px darkblue;
+    font-size: 25px;
     color: white;
-    margin-top: 5%;
+    margin: auto;
     
-}  
-
+}
 .menu-icon {
     font-size: 30px;
     cursor: pointer;

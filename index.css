@@ -237,7 +237,7 @@ width: 100vw;
 }
 .social-icon:hover {
     background-color: #0056b3; 
-    transform: scale(1.1); 
+    transform: scale
 }
 @media (max-width: 790px) {
     .menu-icon {
@@ -273,6 +273,7 @@ width: 100vw;
   .main-header{
     flex-direction: column;
     text-align: center;
+    margin-bottom: 10%;
   }
  
    .measuring-section{
@@ -290,6 +291,12 @@ text-align: center;
 .text-header{
 max-width: 1000px;
 text-align: center;
+}
+.header-text1{
+    margin-bottom: 20%;
+}
+.header-text{
+    margin-bottom: 20%;
 }
 .main-images1{
     width: 45%;
@@ -357,6 +364,9 @@ button{
     background-size:100vw;  
      min-height: 100vh;
 }
+.header-text1{
+    margin-bottom: 20%;
+}
     .Footer-background{
       height: 40vh;
      background-size: 60vw; 
@@ -364,6 +374,14 @@ button{
     .last-footer{
         height: 80vh;
     }
+    .main-header{
+         margin-bottom: 10%;
+         
+    }
+    .header-text{
+    margin-bottom: 10%;
+    
+}
 }
 @media (max-width:390px) {
     .background-image{
