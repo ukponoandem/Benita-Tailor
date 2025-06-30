@@ -29,10 +29,11 @@ body {
 }
 
 .content {
-    text-decoration: none;
+     text-decoration: none;
     color: white;
     font-size: 20px;
     transition: color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
 }
  
  .content:hover {
@@ -208,9 +209,7 @@ position: absolute;
     
         
     }
-    .content{
-        font-size: 12px; 
-    }
+   
 .machine-text{
     font-size: 30px;
 }
@@ -231,7 +230,7 @@ position: absolute;
         font-size: 15px;
 }
 .services-text{
-    font-size: 7px;
+    font-size: 10px;
 }
 
 
@@ -242,7 +241,7 @@ position: absolute;
 }
 .header-servics2{
   
-    font-size: 7px;
+    font-size: 10px;
     
 }
 
@@ -255,10 +254,6 @@ position: absolute;
     
         
     }
-    .content{
-        font-size: 12px; 
-    }
-
 
     .list li {
         margin: 10px 0;
@@ -268,7 +263,7 @@ position: absolute;
         font-size: 15px;
 }
 .services-text{
-    font-size: 7px;
+    font-size: 10px;
 }
 
 .header-service{
@@ -278,7 +273,7 @@ position: absolute;
 }
 .header-servics2{
   
-    font-size: 7px;
+    font-size: 10px;
     
 }
 
@@ -293,9 +288,6 @@ position: absolute;
     
         
     }
-    .content{
-        font-size: 12px; 
-    }
 
     .list li {
         margin: 10px 0;
@@ -305,7 +297,7 @@ position: absolute;
         font-size: 15px;
 }
 .services-text{
-    font-size: 7px;
+    font-size: 10px;
 }
 
 .header-service{
@@ -314,9 +306,7 @@ position: absolute;
     
 }
 .header-servics2{
-  
-    font-size: 7px;
-    
+    font-size: 10px;  
 }
 
 

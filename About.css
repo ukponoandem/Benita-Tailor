@@ -28,10 +28,11 @@ body {
 }
 
 .content {
-    text-decoration: none;
+      text-decoration: none;
     color: white;
     font-size: 20px;
     transition: color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
 }
  
  .content:hover {
@@ -101,7 +102,7 @@ padding: 40px;
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
-        text-align: end;
+        text-align:initial;
     }
 
     .list {
@@ -161,9 +162,6 @@ text-align: center;
     
         
     }
-    .content{
-        font-size: 7px; 
-    }
 
     .list li {
         margin: 10px 0;
@@ -177,13 +175,7 @@ text-align: center;
   .list {
         flex-direction: column;
         gap: 0px;
-    
-        
     }
-    .content{
-        font-size: 7px; 
-    }
-
 
     .list li {
         margin: 10px 0;
@@ -197,16 +189,7 @@ text-align: center;
   .list {
         flex-direction: column;
         gap: 0px;
-    
-        
-    }
-    .content{
-        font-size: 7px; 
-    }
- 
-
-    
-
+  }
     .list li {
         margin: 10px 0;
     }

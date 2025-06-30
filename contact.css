@@ -29,10 +29,11 @@ body {
 }
 
 .content {
-    text-decoration: none;
+     text-decoration: none;
     color: white;
     font-size: 20px;
     transition: color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
 }
  
  .content:hover {
@@ -166,7 +167,7 @@ position: absolute;
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
-        margin-left: 60%;
+    text-align:initial;
     }
 
     .list {
@@ -208,13 +209,6 @@ margin-top: 40%;
     
         
     }
-    .content{
-        font-size: 7px; 
-    }
-    /* .sewing-maching{
-    width: 30px;
-    height: 23px;
-} */
 .machine-text{
     font-size: 10px;
 }
@@ -247,13 +241,7 @@ margin-top: 40%;
     
         
     }
-    .content{
-        font-size: 7px; 
-    }
-    /* .sewing-maching{
-    width: 30px;
-    height: 23px;
-} */
+
 .machine-text{
     font-size: 10px;
 }
@@ -282,13 +270,7 @@ margin-top: 40%;
     
         
     }
-    .content{
-        font-size: 7px; 
-    }
-    /* .sewing-maching{
-    width: 30px;
-    height: 23px;
-} */
+  
 .machine-text{
     font-size: 10px;
 }
